@@ -1,0 +1,277 @@
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+a{
+  color: #000000;
+}
+
+.subhead{
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5em;
+}
+
+.name{
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+
+  @include breakpoint(medium down) {
+    font-size: 1.5rem;
+  }
+}
+
+header{
+  height: 125px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.logo{
+  width: 215px;
+  height: 42px;
+  // margin:40px 0px 40px 0px;
+}
+
+.nav{
+  height:125px;
+}
+
+.nav-item{
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5rem;
+  z-index:2;
+
+  a {
+    &:link{
+      color: #262626;
+    }
+    &:visited{
+      color: #262626;
+    }
+    &:hover{
+      color: #b85233;
+    }
+    &:active{
+      color: #b85233;
+    }
+  }
+}
+
+.contact{
+  a {
+    &:link{
+      color: #262626;
+    }
+    &:visited{
+      color: #262626;
+    }
+    &:hover{
+      color: #b85233;
+    }
+    &:active{
+      color: #b85233;
+    }
+  }
+}
+
+.hero{
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  z-index: -1;
+  margin-bottom: 20px;
+
+  @include breakpoint(small only) {
+    height: 300px;
+  }
+  @include breakpoint(medium only) {
+    height: 400px;
+  }
+}
+
+.hero-logo{
+  color: #ffffff;
+}
+
+.copper-btn{
+  background-color: #b85233;
+  width: 14rem;
+  color:#ffffff;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.25rem;
+  padding: 1rem .5rem 1rem .5rem;
+
+  &:hover{
+    color: #b85233;
+    background-color: #fff;
+    transition: background-color 1s;
+  }
+}
+.hero-text{
+  position: absolute;
+  top: 35%;
+  left: 9%;
+  line-height: 1px;
+
+  @include breakpoint(large) {
+    font-size: 9em;
+  }
+
+  @include breakpoint(medium only) {
+    top: 25%;
+    font-size: 9em;
+    left: 0;
+    padding-left: 10%;
+  }
+
+  @include breakpoint(small only) {
+    font-size: 6em;
+    top: 17%;
+    left: 0;
+    padding-left: 10%;
+  }
+
+}
+
+.b-flower{
+  z-index: 0;
+  position: absolute;
+  right:0%;
+  top:0%;
+
+  @include breakpoint(medium down) {
+    display: none;
+  }
+}
+
+.c-flower{
+  z-index: 0;
+  position: absolute;
+  right:0%;
+  top:15%;
+
+  @include breakpoint(medium down) {
+    display: none;
+  }
+}
+
+.footer-b-flower{
+  background-image:
+    url('../img/footer-b-flowers.svg'),
+    url('../img/footer-c-flowers.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 35em;
+  display: flex;
+  margin-top: -10em;
+}
+
+.footer-c-flower{
+  background-image: url('../img/footer-c-flowers.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 35em;
+  display: flex;
+
+  // @include breakpoint(medium down) {
+  //   width:50%;
+  //   height:85%;
+  //   margin-top:20px;
+  // }
+}
+
+.flower-copper {
+  background-image: url('../img/footer-c-flowers.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 35em;
+  display: flex;
+}
+
+.main-content{
+  margin-bottom: 200px;
+
+  @include breakpoint(medium down) {
+    margin-bottom: 50px;
+  }
+}
+.container{
+  margin-bottom: 50px;
+
+  @include breakpoint(medium down) {
+    margin-bottom: 120px;
+  }
+}
+
+.slant-bg{
+  background: #35616c;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding-top: 3%;
+  @include clearfix;
+
+  &::before{
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(7deg);
+    transform-origin: 100% 0;
+    z-index: -1;
+  }
+}
+
+.bd-lg-text{
+  font-family: 'Crimson Text', serif;
+  font-size: 24px;
+  align-items: center;
+  line-height: 24px;
+}
+.about-img{
+  border-radius: 10px;
+}
+
+.circle{
+  border-radius: 50%;
+  border:5px solid #a3462a;
+}
+
+.small-text{
+  font-size: 14px;
+}
+
+.mt{
+  margin-top: 20px;
+}
+
+.hero-sub-head{
+  font-family: 'Crimson Text', serif;
+  color: #ffffff;
+  line-height: 3.5rem;
+
+  @include breakpoint(small) {
+    font-size: 2.7rem;
+  }
+}
+
+.mL-footer{
+  margin-left: auto;
+  @include breakpoint(large) {
+    margin-left: 9.3em;
+  }
+}

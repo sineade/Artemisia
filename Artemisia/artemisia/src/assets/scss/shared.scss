@@ -1,0 +1,7 @@
+/*
+  "layout/variables" is not included within index.scss becuase both
+  index.scss and _settings.scss depend on it.
+*/
+
+/*@import "components/variables";*/
+@import "components/styles";
